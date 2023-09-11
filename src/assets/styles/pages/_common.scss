@@ -47,25 +47,29 @@ body {
   height: 20px;
   right: 10px;
   left: auto;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-indicators [data-bs-target] {
   background: none;
-  border: 2px solid rgb(212, 212, 212);
-  border-radius: 12px;
-  width: 12px;
-  height: 12px;
-  margin-bottom: 5px;
+  border: 0.15rem solid #d4d4d4;
+  border-radius: 0.1rem;
+  width: 2rem;
+  margin-bottom: 8px;
 }
 
 .carousel-indicators li.active {
   background: rgb(212, 212, 212);
+  width: 3rem;
+  border: 0.2rem solid #d4d4d4;
 }
 
 .carousel-control-next-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   position: fixed;
   top: 95%;
   left: 50%;

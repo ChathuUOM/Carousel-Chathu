@@ -18,9 +18,9 @@ export class FullCarouselComponent implements OnInit {
   ngOnInit(): void {
     this.vCarouselData = [
       { id : 1, img : '', title : 'Big Buck Bunny1', description1 : 'Three rodents amuse themselves by harassing creatures of the forest.',description2 : 'However, when they mess with a bunny, he decides to teach them a lesson.' },
-      // { id : 2, img : '', title : 'Big Buck Bunny2', description1 : 'description1b' },
-      // { id : 3, img : '', title : 'Big Buck Bunny3', description1 : 'description1c' },
-      // { id : 4, img : '', title : 'Big Buck Bunny4', description1 : 'description1d' },
+      { id : 2, img : '', title : 'Big Buck Bunny2', description1 : 'description1b' },
+      { id : 3, img : '', title : 'Big Buck Bunny3', description1 : 'description1c' },
+      { id : 4, img : '', title : 'Big Buck Bunny4', description1 : 'description1d' },
     ];
   }
 }

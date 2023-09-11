@@ -1,0 +1,40 @@
+/* Box Button Styling */
+
+@mixin a-box-btn($bg, $border) {
+  background-color: $bg !important;
+  border-color: $border !important;
+}
+
+@mixin a-icon-btn($border, $color) {
+  border: 1px solid $border;
+  color: $color !important;
+}
+
+.conv-btn {
+  height: 44px;
+  width: inherit;
+  border-radius: 4px;
+  border-style: none;
+  @extend .btn-typo;
+
+  &--primary {
+    @include a-box-btn($primary, none);
+  }
+
+  &--secondary {
+    @include a-box-btn($input, none);
+  }
+
+  &:focus {
+    opacity: 0.8;
+    box-shadow: none !important;
+  }
+}
+
+.btn-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.375rem 2rem;
+  z-index: 1;
+}

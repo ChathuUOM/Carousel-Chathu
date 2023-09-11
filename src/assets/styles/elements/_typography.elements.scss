@@ -1,0 +1,93 @@
+@mixin typo($font-size, $font-weight, $line-height, $color: $text-on-surface, $text-transform:none, $font-style: normal, ) {
+    font-size     : $font-size !important;
+    font-weight   : $font-weight !important;
+    line-height   : $line-height !important;
+    color         : $color !important;
+    text-transform: $text-transform !important;
+    font-style    : $font-style !important;
+}
+
+%commonTypo {
+    font-stretch: normal;
+}
+
+.h-typo {
+    @extend %commonTypo;
+    @include typo(40px, 500, normal, $primary, uppercase);
+
+    @include media-breakpoint-down(lg) {
+        font-size: 18px !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px !important;
+    }
+}
+
+.h-typo-normal {
+    @extend %commonTypo;
+    @include typo(40px, 500, normal, $text-on-surface, uppercase);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px !important;
+    }
+}
+
+.p-typo {
+    @extend %commonTypo;
+    @include typo(20px, normal, 1.5);
+
+    @include media-breakpoint-down(lg) {
+        font-size: 14px !important;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 12px !important;
+    }
+}
+
+.info-typo {
+    @extend %commonTypo;
+    @include typo(14px, 400, 17px);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 11px !important;
+    }
+}
+
+.info-typo-primary {
+    @extend %commonTypo;
+    @include typo(14px, 400, 17px, $primary);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 11px !important;
+    }
+}
+
+.input-typo {
+    @extend %commonTypo;
+    @include typo(12px, 400, 15px, $text-on-surface, capitalize);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 10px !important;
+    }
+}
+
+.input-typo-pri-i {
+    @extend %commonTypo;
+    @include typo(16px, 400, 19px, $primary, capitalize, italic);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 12px !important;
+    }
+}
+
+.btn-typo {
+    @extend %commonTypo;
+    @include typo(14px, 700, 17px);
+    text-transform: uppercase !important;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 11px !important;
+    }
+}

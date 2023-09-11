@@ -1,0 +1,57 @@
+ :root {
+     --primary           : #F8A327;
+     --surface           : #0C131D;
+     --backGround        : #383838;
+     --input             : #1B2B3B;
+     --textOnPrimary     : #fbfbfb;
+     --textOnSurface     : #fbfbfb;
+     --titleTextOnSurface: #fbfbfb;
+ }
+
+
+ $primary               : var(--primary);
+ $surface               : var(--surface);
+ $background            : var(--backGround);
+ $input                 : var(--input);
+ $text-on-primary       : var(--textOnPrimary);
+ $text-on-surface       : var(--textOnSurface);
+ $title-text-on-surface : var(--titleTextOnSurface);
+
+
+ /* Major Colors Variables */
+ $white : #ffffff !default;
+ $black : #000000 !default;
+
+ //  Gray 
+ $dark-gray : #646668 !default;
+ $light-gray:#8a8a8a !default;
+
+ // Color Blue Variables
+ $color-skyblue-01 : #156999 !default;
+ $color-skyblue-02 : #6c95bd !default;
+
+ $dark-blue-01 : #35506b !default;
+ $dark-blue-02 : #142638 !default;
+ $dark-blue-03 : #233c55 !default;
+
+ // Color Yellow Variables
+ $yellow-01: #cfac1f !default;
+
+
+ //RGBA White Colors
+ $white-08 : rgba($white, 0.08) !default;
+ $white-12 : rgba($white, 0.12) !default;
+ $white-32 : rgba($white, 0.32) !default;
+ $white-60 : rgba($white, 0.60) !default;
+ $white-87 : rgba($white, 0.87) !default;
+
+ // RGBA Primary Color Variables
+ $primary-08 : rgba($primary, 0.08) !default;
+
+ //  New Icon Colors 
+ $red        :#DB4437 !default;
+ $purple     :#3B5999 !default;
+ $light-blue :#55ACEE !default;
+ $dark-blue  :#0a66ac !default;
+ $green      :#032e2e !default;
+ $blue-green :#0e7777 !default;

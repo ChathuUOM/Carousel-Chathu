@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="carousel-container justify-content-center">
+        <!-- data-bs-interval: the amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle -->
+        <!-- data-bs wrap: whether the carousel should cycle continuously -->
+        <div id="vertical-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="true"
+            data-bs-wrap="true">
+             <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+             </ol>
+            <div class="carousel-inner">
+                <button type="button" class="btn btn-outline-info btn-logo">LOGO</button>
+                <!-- Carousel item represents each slide -->
+                <div *ngFor="let item of vCarouselData" class="carousel-item" [ngClass]="{active: isActive(item)}"
+                    style="background-image:url(../../../assets/Images/cover-bg-{{item.id}}.jpg);">
+                    <div class="container">
+                        <div class="center align-items-center" style="height: 100%">
+                            <div class="center align-items-center" style="height: 100%">
+                                <div class="display-3 text-center text-light">
+                                    <div class="h-typo-normal">{{item.title}}</div>
+                                    <div class="separator"></div>
+                                    <div class="p-typo">{{item.description1}}
+                                        <br>
+                                        {{item.description2}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel buttons -->
+        <button class="unclickable carousel-control-next" type="button" data-bs-target="#vertical-carousel"
+            data-bs-slide="next">
+            <span class="clickable carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

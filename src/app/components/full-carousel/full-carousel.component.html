@@ -12,7 +12,11 @@
                 <li data-bs-target="#vertical-carousel" data-bs-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
-                <button type="button" class="btn btn-outline-info btn-logo">LOGO</button>
+                <div>
+                    <a href="/card" (click)="navigateTo('/card')" routerLink="/card" target="_blank">
+                        <button type="button" class="btn conv-btn conv-btn--secondary btn-logo">LOGO</button>
+                    </a>
+                </div>
                 <!-- Carousel item represents each slide -->
                 <div *ngFor="let item of vCarouselData" class="carousel-item" [ngClass]="{active: isActive(item)}"
                     style="background-image:url(../../../assets/Images/cover-bg-{{item.id}}.jpg);">

@@ -1,12 +1,8 @@
 /* Box Button Styling */
 
-@mixin a-box-btn($bg, $border) {
+@mixin a-box-btn($bg, $border, $color) {
   background-color: $bg !important;
-  border-color: $border !important;
-}
-
-@mixin a-icon-btn($border, $color) {
-  border: 1px solid $border;
+  border: 1px solid $border !important;
   color: $color !important;
 }
 
@@ -18,16 +14,20 @@
   @extend .btn-typo;
 
   &--primary {
-    @include a-box-btn($primary, none);
+    @include a-box-btn($primary, none, $text-on-primary);
   }
 
   &--secondary {
-    @include a-box-btn($input, none);
+    @include a-box-btn(transparent, $primary, $primary);
   }
 
-  &:focus {
+  &:focus,
+  &:active, 
+  &:hover  {
     opacity: 0.8;
     box-shadow: none !important;
+    background-color: $primary-dark !important;
+    color: $primary-light !important;
   }
 }
 

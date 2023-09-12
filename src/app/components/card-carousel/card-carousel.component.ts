@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { IHCarouselItem } from 'src/app/model/h-carousel.model';
 
 @Component({
@@ -13,7 +12,7 @@ export class CardCarouselComponent implements OnInit {
   btnText: string = 'Logo';
   title: string = 'NASA Missions';
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   ngOnInit(): void {
     this.hCarouselData = [
@@ -69,10 +68,5 @@ export class CardCarouselComponent implements OnInit {
         description: 'The First U.S. Satellite',
       },
     ];
-  }
-
-  // Adding navigation for card list page
-  navigateTo(route: string): void {
-    window.open(route, '_blank');
   }
 }

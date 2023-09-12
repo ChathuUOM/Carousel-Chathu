@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { IVCarouselItem } from 'src/app/model/v-carousel.model';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'conv-full-carousel',
@@ -10,7 +9,7 @@ import { Router } from '@angular/router';
 export class FullCarouselComponent implements OnInit {
   vCarouselData: IVCarouselItem[] = [];
 
-  constructor(private router: Router) {}
+  constructor() {}
 
   isActive(item: any) {
     return item === this.vCarouselData[0];
@@ -46,10 +45,5 @@ export class FullCarouselComponent implements OnInit {
         description1: 'description1d',
       },
     ];
-  }
-
-  // Adding navigation for card list page
-  navigateTo(route: string): void {
-    window.open(route, '_blank');
   }
 }

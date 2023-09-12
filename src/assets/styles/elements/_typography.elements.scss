@@ -33,6 +33,24 @@
     }
 }
 
+.sub-h-typo {
+    @extend %commonTypo;
+    @include typo(25px, bold, normal, $primary, capitalize);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 15px !important;
+    }
+}
+
+.sub-h-typo-normal {
+    @extend %commonTypo;
+    @include typo(25px, bold, normal, $text-on-surface, capitalize);
+
+    @include media-breakpoint-down(sm) {
+        font-size: 15px !important;
+    }
+}
+
 .p-typo {
     @extend %commonTypo;
     @include typo(20px, normal, 1.5);

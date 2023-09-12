@@ -14,20 +14,20 @@
   @extend .btn-typo;
 
   &--primary {
-    @include a-box-btn($primary, none, $text-on-primary);
+    @include a-box-btn($primary-light, none, $text-on-primary);
   }
 
   &--secondary {
-    @include a-box-btn(transparent, $primary, $primary);
+    @include a-box-btn(transparent, $primary-light, $primary-light);
   }
 
   &--text {
-    @include a-box-btn(transparent, none, $primary);
+    @include a-box-btn(transparent, none, $primary-light);
 
     &:focus,
     &:active,
     &:hover {
-      @include a-box-btn(transparent, transparent, $primary);
+      @include a-box-btn(transparent, transparent, $primary-light);
     }
   }
 

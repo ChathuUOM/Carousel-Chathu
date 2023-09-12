@@ -11,6 +11,7 @@
   width: inherit;
   border-radius: 4px;
   border-style: none;
+  box-shadow: none !important;
   @extend .btn-typo;
 
   &--primary {
@@ -22,22 +23,17 @@
   }
 
   &--text {
-    @include a-box-btn(transparent, none, $primary-light);
+    @include a-box-btn(transparent, transparent, $primary-light);
 
-    &:focus,
-    &:active,
     &:hover {
       @include a-box-btn(transparent, transparent, $primary-light);
     }
   }
 
-  &:focus,
-  &:active,
   &:hover {
     opacity: 0.8;
     box-shadow: none !important;
     background-color: $primary-dark !important;
-    color: $primary-light !important;
   }
 }
 

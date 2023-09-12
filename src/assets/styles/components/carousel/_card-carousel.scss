@@ -16,10 +16,9 @@
 }
 .MultiCarousel .MultiCarousel-inner .item > div {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
-  background: rgba(255, 255, 255, 0.6);
-  color: #666;
+  background: $surface-light;
   border-top-left-radius: 16px;
   border-bottom-right-radius: 16px;
 }

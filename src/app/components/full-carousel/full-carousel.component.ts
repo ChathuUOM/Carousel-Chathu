@@ -21,29 +21,31 @@ export class FullCarouselComponent implements OnInit {
       {
         id: 1,
         img: '',
-        title: 'Big Buck Bunny1',
+        title: 'Big Buck Bunny',
         description1:
-          'Three rodents amuse themselves by harassing creatures of the forest.',
+          'Three rodents harassing creatures of the forest.',
         description2:
-          'However, when they mess with a bunny, he decides to teach them a lesson.',
+          'Start to mess with a bunny',
       },
       {
         id: 2,
         img: '',
-        title: 'Big Buck Bunny2',
-        description1: 'description1b',
+        title: 'Project Peach',
+        description1: 'Code-named "Project Peach"',
+        description2: 'Short computer-animated comedy film.',
       },
       {
         id: 3,
         img: '',
-        title: 'Big Buck Bunny3',
-        description1: 'description1c',
+        title: 'Blender Foundation',
+        description1:
+          'Made by the Blender Institute',
       },
       {
         id: 4,
         img: '',
-        title: 'Big Buck Bunny4',
-        description1: 'description1d',
+        title: 'Big Buck Bunny',
+        description1: 'Featuring animals of the forest',
       },
     ];
   }

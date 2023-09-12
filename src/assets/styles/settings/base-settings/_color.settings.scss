@@ -1,29 +1,29 @@
 :root {
   --primary: #1d98ff;
-  --primaryDark: #0c1319;
+  --primaryDark: #05243d;
   --primaryLight: #5ab4ff;
   --surface: #0c131d;
+  --surfaceLight: rgba(255, 255, 255, 0.6);
   --backGround: #383838;
-  --input: #1b2b3b;
   --textOnPrimary: #cfcfcf;
   --textOnSurface: #cfcfcf;
   --textOnSurfaceDark: #d4d4d4;
   --textOnDarksurface: #d7e7f4;
-  --titleTextOnSurface: #cfcfcf;
+  --titleTextOnSurface: #001834;
   --darkOverlay1: rgba(0, 0, 0, 0.8);
-  --darkOverlay2: rgba(0, 0, 0, 0.2);
+  --darkOverlay2: rgba(0, 0, 0, 0.6);
 }
 
 $primary: var(--primary);
 $primary-dark: var(--primaryDark);
 $primary-light: var(--primaryLight);
 $surface: var(--surface);
+$surface-light: var(--surfaceLight);
 $background: var(--backGround);
-$input: var(--input);
 $text-on-primary: var(--textOnPrimary);
 $text-on-surface: var(--textOnSurface);
 $text-on-surface-dark: var(--textOnSurfaceDark);
-$text-on-dark-dark: var(--textOnDarkSurface);
+$text-on-dark-surface: var(--textOnDarkSurface);
 $title-text-on-surface: var(--titleTextOnSurface);
 $dark-overlay-01: var(--darkOverlay1);
 $dark-overlay-02: var(--darkOverlay2);

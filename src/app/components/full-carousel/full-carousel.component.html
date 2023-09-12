@@ -14,7 +14,10 @@
             <div class="carousel-inner">
                 <div>
                     <a routerLink="/card" target="_blank">
-                        <button type="button" class="btn conv-btn conv-btn--secondary btn-logo">{{btnText}}</button>
+                        <button type="button" class="btn conv-btn conv-btn--secondary btn-logo" data-bs-toggle="tooltip"
+                            title="Click me to see the next page">
+                            {{btnText}}
+                        </button>
                     </a>
                 </div>
                 <!-- Carousel item represents each slide -->
@@ -22,7 +25,8 @@
                     style="background-image:url(../../../assets/images/cover-bg-{{item.id}}.jpg);">
                     <div class="container-fluid">
                         <div class="d-flex justify-content-center align-items-center text-center" style="height: 100%">
-                            <div class="d-flex justify-content-center align-items-center text-center" style="height: 100%">
+                            <div class="d-flex justify-content-center align-items-center text-center"
+                                style="height: 100%">
                                 <div class="display-3 text-center text-light">
                                     <div class="h-typo-normal">{{item.title}}</div>
                                     <div class="separator"></div>

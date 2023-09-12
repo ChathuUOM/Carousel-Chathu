@@ -34,7 +34,7 @@ export class CardCarouselComponent implements OnInit {
         id: 3,
         title: 'Mars Science Lab',
         description:
-          'The Mars Science Laboratory, a Rockhound on the Red Planet',
+          'A Rockhound on the Red Planet',
       },
       {
         id: 4,

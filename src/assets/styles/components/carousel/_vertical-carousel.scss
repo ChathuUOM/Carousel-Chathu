@@ -41,16 +41,16 @@
 
   .carousel-indicators [data-bs-target] {
     background: none;
-    border: 0.15rem solid #d4d4d4;
+    border: 0.15rem solid $text-on-surface-dark;
     border-radius: 0.1rem;
     width: 2rem;
     margin-bottom: 8px;
   }
 
   .carousel-indicators li.active {
-    background: rgb(212, 212, 212);
+    background: $text-on-dark-surface;
     width: 3rem;
-    border: 0.2rem solid #d4d4d4;
+    border: 0.2rem solid $text-on-surface-dark;
   }
 
   .carousel-control-next-icon {

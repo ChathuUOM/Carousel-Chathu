@@ -11,6 +11,10 @@ body {
   height: 100%;
   padding: 0;
   background: $dark-overlay-01;
+
+  &--multi {
+    background: $dark-overlay-02 !important;
+  }
 }
 
 .separator {
@@ -21,8 +25,8 @@ body {
 }
 
 // Second Page
-.container-fluid {
-  &.card-carousel {
+.card-carousel {
+  &.container-fluid {
     background: $dark-overlay-02;
   }
 }
@@ -38,7 +42,6 @@ body {
   width: 100%;
   height: 100%;
   padding: 0;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .header {

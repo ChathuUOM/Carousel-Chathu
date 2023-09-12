@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { IHCarouselItem } from 'src/app/model/h-carousel.model';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'conv-card-carousel',
@@ -11,8 +12,11 @@ export class CardCarouselComponent implements OnInit {
   linkText: string = 'Discover more';
   btnText: string = 'Logo';
   title: string = 'NASA Missions';
+  bgImgUrl: any;
 
-  constructor() {}
+  constructor(private sanitizer: DomSanitizer) {
+    this.bgImgUrl = this.sanitizer.bypassSecurityTrustStyle(`url('./assets/images/earth.png')`);
+  }
 
   ngOnInit(): void {
     this.hCarouselData = [

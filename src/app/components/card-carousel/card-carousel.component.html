@@ -1,6 +1,7 @@
-<div class="container">
-    <div class="page-wrapper bg-image">
+<div class="container card-carousel">
+    <div class="page-wrapper" [style.background-image]="'url(' + bgImgUrl + ')'">
         <div class="overlay">
+            <!-- Top Bar  -->
             <div class="position-relative">
                 <a routerLink="/home" target="_blank">
                     <button type="button" class="btn conv-btn conv-btn--secondary btn-logo">
@@ -13,6 +14,11 @@
                     </button>
                 </a>
             </div>
+            <!-- Title  -->
+            <div class="position-relative">
+                <span class="header h-typo">NASA - Greatest Achievements</span>
+            </div>
+            <!-- Multi Carousel -->
             <div class="container d-flex flex-column justify-content-center">
                 <div class="d-flex flex-column flex-sm-wrap py-2 justify-content-end align-items-end">
                     <div class="col-sm-8 col-12 h-100">

@@ -12,3 +12,41 @@ body {
   padding: 0;
   background: rgba(0, 0, 0, 0.8);
 }
+
+.separator {
+  height: 5px;
+  width: 150px;
+  margin: 5px auto 20px;
+  background-color: $text-on-surface;
+}
+
+// Second Page
+.container {
+  &.card-carousel {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.page-wrapper {
+  background-image: url(../../../assets/Images/earth.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.header {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 7rem;
+  width: 100%;
+  top: 8rem;
+}

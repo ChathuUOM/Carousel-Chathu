@@ -5,9 +5,11 @@
   --surface: #0c131d;
   --backGround: #383838;
   --input: #1b2b3b;
-  --textOnPrimary: #fbfbfb;
-  --textOnSurface: #fbfbfb;
-  --titleTextOnSurface: #fbfbfb;
+  --textOnPrimary: #cfcfcf;
+  --textOnSurface: #cfcfcf;
+  --textOnSurfaceDark: #d4d4d4;
+  --textOnDarksurface: #d7e7f4;
+  --titleTextOnSurface: #cfcfcf;
 }
 
 $primary: var(--primary);
@@ -18,6 +20,7 @@ $background: var(--backGround);
 $input: var(--input);
 $text-on-primary: var(--textOnPrimary);
 $text-on-surface: var(--textOnSurface);
+$text-on-surface-dark: var(--textOnSurfaceDark);
 $title-text-on-surface: var(--titleTextOnSurface);
 
 /* Major Colors Variables */

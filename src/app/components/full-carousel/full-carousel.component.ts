@@ -8,6 +8,7 @@ import { IVCarouselItem } from 'src/app/model/v-carousel.model';
 })
 export class FullCarouselComponent implements OnInit {
   vCarouselData: IVCarouselItem[] = [];
+  btnText: string = 'Logo';
 
   constructor() {}
 

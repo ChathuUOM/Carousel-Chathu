@@ -1,4 +1,4 @@
-<div class="container-fluid v-carousel">
+<div class="container-fluid v-carousel section-wrapper">
     <div class="carousel-container justify-content-center">
         <!-- data-bs-interval: the amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle -->
         <!-- data-bs wrap: whether the carousel should cycle continuously -->
@@ -20,6 +20,11 @@
                         </button>
                     </a>
                 </div>
+                <!-- Switch Themes  -->
+                <div class="position-relative">
+                    <conv-switch-theme></conv-switch-theme>
+                </div>
+
                 <!-- Carousel item represents each slide -->
                 <div *ngFor="let item of vCarouselData" class="carousel-item" [ngClass]="{active: isActive(item)}"
                     style="background-image:url(../../../assets/images/cover-bg-{{item.id}}.jpg);">

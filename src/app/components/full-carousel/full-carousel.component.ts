@@ -22,10 +22,8 @@ export class FullCarouselComponent implements OnInit {
         id: 1,
         img: '',
         title: 'Big Buck Bunny',
-        description1:
-          'Three rodents harassing creatures of the forest.',
-        description2:
-          'Start to mess with a bunny',
+        description1: 'Three rodents harassing creatures of the forest.',
+        description2: 'Start to mess with a bunny',
       },
       {
         id: 2,
@@ -38,8 +36,7 @@ export class FullCarouselComponent implements OnInit {
         id: 3,
         img: '',
         title: 'Blender Foundation',
-        description1:
-          'Made by the Blender Institute',
+        description1: 'Made by the Blender Institute',
       },
       {
         id: 4,
@@ -49,4 +46,5 @@ export class FullCarouselComponent implements OnInit {
       },
     ];
   }
+
 }

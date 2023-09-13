@@ -1,23 +1,22 @@
 /* Import Global Style Files */
 
-
 /* SETTINGS Files */
-@import './settings/base-settings/color.settings';
+@import "./settings/base-settings/color.settings";
 
 /* TOOLS Files */
-@import './tools/mixins/display-grid.mixins';
-@import './tools/mixins/display-flex.mixins';
+@import "./tools/mixins/display-grid.mixins";
+@import "./tools/mixins/display-flex.mixins";
 
 /* GENERIC Files */
-@import './generic/reset.generic';
+@import "./generic/reset.generic";
 
 /* ELEMENTS Files */
-@import './elements/typography.elements';
+@import "./elements/typography.elements";
 
 /* COMPONENTS Files */
-@import 'components/buttons/button';
-@import 'components/carousel/vertical-carousel';
-@import 'components/carousel/card-carousel';
+@import "components/buttons/button";
+@import "components/carousel/vertical-carousel";
+@import "components/carousel/card-carousel";
 
 /* PAGES Files */
-@import 'pages/common';
+@import "pages/common";

@@ -1,7 +1,25 @@
-:root {
+// For dark theme
+[data-bs-theme="dark"] {
   --primary: #1d98ff;
   --primaryDark: #05243d;
   --primaryLight: #5ab4ff;
+  --surface: #0c131d;
+  --surfaceLight: rgba(255, 255, 255, 0.6);
+  --backGround: #383838;
+  --textOnPrimary: #cfcfcf;
+  --textOnSurface: #cfcfcf;
+  --textOnSurfaceDark: #d4d4d4;
+  --textOnDarksurface: #d7e7f4;
+  --titleTextOnSurface: #001834;
+  --darkOverlay1: rgba(0, 0, 0, 0.8);
+  --darkOverlay2: rgba(0, 0, 0, 0.6);
+}
+
+// For light theme
+[data-bs-theme="light"] {
+  --primary: #eee01d;
+  --primaryDark: #05243d;
+  --primaryLight: #f1e861;
   --surface: #0c131d;
   --surfaceLight: rgba(255, 255, 255, 0.6);
   --backGround: #383838;

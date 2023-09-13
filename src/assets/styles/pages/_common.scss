@@ -67,5 +67,13 @@ body {
   justify-content: flex-end;
   padding-right: 7rem;
   width: 100%;
-  top: 8rem;
+  top: 9rem;
+  @include media-breakpoint-down(lg) {
+    padding-right: 0;
+    justify-content: center;
+  }
+}
+
+.multi-card-wrap {
+  margin-right: 2rem !important;
 }

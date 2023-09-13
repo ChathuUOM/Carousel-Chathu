@@ -31,14 +31,15 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./assets/images/",
+                "output": "./assets/images/"
+              }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "src/assets/js/script.js"
-            ]
+            "styles": ["src/styles.scss"],
+            "scripts": ["src/assets/js/script.js"]
           },
           "configurations": {
             "production": {
@@ -99,16 +100,9 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "src/assets/js/script.js"
-            ]
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
+            "scripts": ["src/assets/js/script.js"]
           }
         }
       }

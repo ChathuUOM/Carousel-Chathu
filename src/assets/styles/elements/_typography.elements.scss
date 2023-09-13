@@ -20,7 +20,7 @@
 
 .h-typo {
   @extend %commonTypo;
-  @include typo(40px, 500, normal, $primary, uppercase);
+  @include typo(40px, 600, normal, $primary, uppercase);
 
   @include media-breakpoint-down(lg) {
     font-size: 18px !important;
@@ -33,7 +33,7 @@
 
 .h-typo-normal {
   @extend %commonTypo;
-  @include typo(40px, 500, normal, $text-on-surface, uppercase);
+  @include typo(40px, 600, normal, $text-on-surface, uppercase);
 
   @include media-breakpoint-down(sm) {
     font-size: 16px !important;

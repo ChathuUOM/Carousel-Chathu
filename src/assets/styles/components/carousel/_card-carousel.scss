@@ -38,5 +38,8 @@
 .MultiCarousel .leftLst.over,
 .MultiCarousel .rightLst.over {
   pointer-events: none;
-  background: #ccc;
+  background-color: $surface-lighter !important;
+  border: 1px solid $black !important;
+  color: $background !important;
+  cursor: not-allowed;
 }

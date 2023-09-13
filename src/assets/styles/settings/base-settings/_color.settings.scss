@@ -2,12 +2,13 @@
 [data-bs-theme="dark"] {
   --primary: #1d98ff;
   --primaryDark: #05243d;
-  --primaryLight: #5ab4ff;
+  --primaryLight: #0d6efd;
   --surface: #0c131d;
   --surfaceLight: rgba(255, 255, 255, 0.6);
+  --surfaceLighter: #ccc;
   --backGround: #383838;
-  --textOnPrimary: #cfcfcf;
-  --textOnSurface: #cfcfcf;
+  --textOnPrimary: #fff;
+  --textOnSurface: #ececec;
   --textOnSurfaceDark: #d4d4d4;
   --textOnDarksurface: #d7e7f4;
   --titleTextOnSurface: #001834;
@@ -17,19 +18,20 @@
 
 // For light theme
 [data-bs-theme="light"] {
-  --primary: #eee01d;
-  --primaryDark: #05243d;
-  --primaryLight: #f1e861;
+  --primary: #05295d;
+  --primaryDark: #011d44;
+  --primaryLight: #011d44;
   --surface: #0c131d;
-  --surfaceLight: rgba(255, 255, 255, 0.6);
+  --surfaceLight: #b1ccf5;
+  --surfaceLighter: #ccc;
   --backGround: #383838;
-  --textOnPrimary: #cfcfcf;
-  --textOnSurface: #cfcfcf;
-  --textOnSurfaceDark: #d4d4d4;
+  --textOnPrimary: #ebebeb;
+  --textOnSurface: #2c2c2c;
+  --textOnSurfaceDark: #1b1c1d;
   --textOnDarksurface: #d7e7f4;
   --titleTextOnSurface: #001834;
-  --darkOverlay1: rgba(0, 0, 0, 0.8);
-  --darkOverlay2: rgba(0, 0, 0, 0.6);
+  --darkOverlay1: rgba(255, 255, 255, 0.4);
+  --darkOverlay2: rgba(255, 255, 255, 0.4);
 }
 
 $primary: var(--primary);
@@ -37,6 +39,7 @@ $primary-dark: var(--primaryDark);
 $primary-light: var(--primaryLight);
 $surface: var(--surface);
 $surface-light: var(--surfaceLight);
+$surface-lighter: var(--surfaceLighter);
 $background: var(--backGround);
 $text-on-primary: var(--textOnPrimary);
 $text-on-surface: var(--textOnSurface);

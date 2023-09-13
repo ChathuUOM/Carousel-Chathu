@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FullCarouselComponent } from './components/full-carousel/full-carousel.component';
 import { CardCarouselComponent } from './components/card-carousel/card-carousel.component';
 import { SwitchThemeComponent } from './components/switch-theme/switch-theme.component';
@@ -18,7 +19,8 @@ import { SwitchThemeComponent } from './components/switch-theme/switch-theme.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

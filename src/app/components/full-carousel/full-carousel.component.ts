@@ -9,6 +9,7 @@ import { IVCarouselItem } from 'src/app/model/v-carousel.model';
 export class FullCarouselComponent implements OnInit {
   vCarouselData: IVCarouselItem[] = [];
   btnText: string = 'Logo';
+  activeSlideIndex: any;
 
   constructor() {}
 
@@ -47,4 +48,18 @@ export class FullCarouselComponent implements OnInit {
     ];
   }
 
+  onMouseWheel(event: WheelEvent) {
+    const delta = Math.sign(event.deltaY);
+    debugger;
+    if (delta === 1) {
+      // Scroll down
+      this.activeSlideIndex =
+        (this.activeSlideIndex + 1) % this.vCarouselData.length;
+    } else if (delta === -1) {
+      // Scroll up
+      this.activeSlideIndex =
+        (this.activeSlideIndex - 1 + this.vCarouselData.length) %
+        this.vCarouselData.length;
+    }
+  }
 }

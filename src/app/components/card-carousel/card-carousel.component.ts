@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { IHCarouselItem } from 'src/app/model/h-carousel.model';
 import { DomSanitizer } from '@angular/platform-browser';
 
@@ -15,7 +16,9 @@ export class CardCarouselComponent implements OnInit {
   bgImgUrl: any;
 
   constructor(private sanitizer: DomSanitizer) {
-    this.bgImgUrl = this.sanitizer.bypassSecurityTrustStyle(`url('./assets/images/earth.png')`);
+    this.bgImgUrl = this.sanitizer.bypassSecurityTrustStyle(
+      `url('./assets/images/earth.png')`
+    );
   }
 
   ngOnInit(): void {
@@ -33,8 +36,7 @@ export class CardCarouselComponent implements OnInit {
       {
         id: 3,
         title: 'Mars Science Lab',
-        description:
-          'A Rockhound on the Red Planet',
+        description: 'A Rockhound on the Red Planet',
       },
       {
         id: 4,

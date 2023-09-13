@@ -41,7 +41,7 @@ $(document).ready(function () {
         .attr("id", "MultiCarousel" + id);
 
       if (bodyWidth >= 1200) {
-        incno = itemsSplit[3];
+        incno = itemsSplit[2];
         itemWidth = sampwidth / incno;
       } else if (bodyWidth >= 992) {
         incno = itemsSplit[2];
@@ -152,9 +152,6 @@ $(document).ready(function () {
         );
       },
     });
-    $(".item1.active img").animateCss("slideInDown");
-    $(".item1.active h2").animateCss("zoomIn");
-    $(".item1.active p").animateCss("fadeIn");
   });
 
   //to start animation on  mousescroll , click and swipe
@@ -172,20 +169,6 @@ $(document).ready(function () {
         );
       },
     });
-
-    // add animation type  from animate.css on the element which you want to animate
-
-    $(".item1 img").animateCss("slideInDown");
-    $(".item1 h2").animateCss("zoomIn");
-    $(".item1 p").animateCss("fadeIn");
-
-    $(".item2 img").animateCss("zoomIn");
-    $(".item2 h2").animateCss("swing");
-    $(".item2 p").animateCss("fadeIn");
-
-    $(".item3 img").animateCss("fadeInLeft");
-    $(".item3 h2").animateCss("fadeInDown");
-    $(".item3 p").animateCss("fadeIn");
   });
 });
 

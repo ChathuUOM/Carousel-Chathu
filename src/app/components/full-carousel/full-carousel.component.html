@@ -27,7 +27,7 @@
 
                 <!-- Carousel item represents each slide -->
                 <div *ngFor="let item of vCarouselData" class="carousel-item" [ngClass]="{active: isActive(item)}"
-                    style="background-image:url(../../../assets/images/cover-bg-{{item.id}}.jpg);">
+                    style="background-image:url('{{item.img}}');">
                     <div class="container-fluid">
                         <div class="d-flex justify-content-center align-items-center text-center" style="height: 100%">
                             <div class="d-flex justify-content-center align-items-center text-center"

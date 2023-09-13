@@ -21,27 +21,27 @@ export class FullCarouselComponent implements OnInit {
     this.vCarouselData = [
       {
         id: 1,
-        img: '../assets/images/cover-bg-1.jpg',
+        img: '',
         title: 'Big Buck Bunny',
         description1: 'Three rodents harassing creatures of the forest.',
         description2: 'Start to mess with a bunny',
       },
       {
         id: 2,
-        img: '../assets/images/cover-bg-2.jpg',
+        img: '',
         title: 'Project Peach',
         description1: 'Code-named "Project Peach"',
         description2: 'Short computer-animated comedy film.',
       },
       {
         id: 3,
-        img: '../assets/images/cover-bg-3.jpg',
+        img: '',
         title: 'Blender Foundation',
         description1: 'Made by the Blender Institute',
       },
       {
         id: 4,
-        img: '../assets/images/cover-bg-4.jpg',
+        img: '',
         title: 'Big Buck Bunny',
         description1: 'Featuring animals of the forest',
       },

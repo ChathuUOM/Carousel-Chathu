@@ -26,20 +26,25 @@
             <!-- Multi Carousel -->
             <div class="container-fluid container-fluid--multi d-flex flex-column justify-content-center">
                 <div class="d-flex flex-column flex-sm-wrap py-2 justify-content-end align-items-end">
-                    <div class="col-sm-8 col-12 h-100 multi-card-wrap">
-                        <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
+                    <div class="col-12 col-sm-9 h-100">
+                        <div class="MultiCarousel" data-items="1,2,3,4,5" data-slide="1" id="MultiCarousel"
                             data-interval="1000">
                             <div class="MultiCarousel-inner">
                                 <div *ngFor="let item of hCarouselData" class="item justify-content-center">
-                                    <div class="rounded-top-start text-start">
+                                    <div class="rounded-top-start text-start d-block w-100">
                                         <div class="sub-h-typo-normal">{{item.title}} #{{item.id}}</div>
                                         <div class="pt-3 body-typo">{{item.description}}</div>
                                     </div>
                                 </div>
                             </div>
                             <button class="btn btn-primary leftLst">
-                                < </button>
-                                    <button class="btn btn-primary rightLst">></button>
+                                <span class="clickable carousel-control-prev-icon" style="height: 12px; width: 12px;"
+                                    aria-hidden="true"></span>
+                            </button>
+                            <button class="btn btn-primary rightLst">
+                                <span class="clickable carousel-control-next-icon" style="height: 12px; width: 12px;"
+                                    aria-hidden="true"></span>
+                            </button>
                         </div>
                     </div>
                 </div>

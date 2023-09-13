@@ -76,4 +76,7 @@ body {
 
 .multi-card-wrap {
   margin-right: 2rem !important;
+  @include media-breakpoint-down(sm) {
+    margin-right: 0 !important;
+  }
 }

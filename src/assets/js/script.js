@@ -108,16 +108,6 @@ $(document).ready(function () {
   }
 });
 
-// scroll slides on mouse scroll
-$("#vertical-carousel").bind("mousewheel DOMMouseScroll", function (e) {
-  debugger;
-  if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
-    $(this).carousel("prev");
-  } else {
-    $(this).carousel("next");
-  }
-  e.preventDefault();
-});
 
 //scroll slides on swipe for touch enabled devices
 $("#vertical-carousel").on("touchstart", function (event) {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IVCarouselItem } from 'src/app/model/v-carousel.model';
-
+declare var $: any;
 @Component({
   selector: 'conv-full-carousel',
   templateUrl: './full-carousel.component.html',
@@ -49,17 +49,15 @@ export class FullCarouselComponent implements OnInit {
   }
 
   onMouseWheel(event: WheelEvent) {
-    const delta = Math.sign(event.deltaY);
-    debugger;
-    if (delta === 1) {
-      // Scroll down
-      this.activeSlideIndex =
-        (this.activeSlideIndex + 1) % this.vCarouselData.length;
-    } else if (delta === -1) {
-      // Scroll up
-      this.activeSlideIndex =
-        (this.activeSlideIndex - 1 + this.vCarouselData.length) %
-        this.vCarouselData.length;
-    }
+    $('#vertical-carousel').bind(
+      'mousewheel DOMMouseScroll',
+      function (e: any) {
+        if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+          $('#vertical-carousel').carousel('prev');
+        } else {
+          $('#vertical-carousel').carousel('next');
+        }
+      }
+    );
   }
 }

@@ -14,8 +14,9 @@ export class CardCarouselComponent implements OnInit {
   btnText: string = 'Logo';
   title: string = 'NASA Missions';
   bgImgUrl: string = 'earth.png';
+  isLoaded: boolean = false;
 
-  constructor(private sanitizer: DomSanitizer) {  }
+  constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit(): void {
     this.hCarouselData = [
@@ -75,5 +76,9 @@ export class CardCarouselComponent implements OnInit {
         description: 'The First U.S. Satellite',
       },
     ];
+
+    setTimeout(() => {
+      this.isLoaded = true;
+    }, 3000);
   }
 }

@@ -1,8 +1,8 @@
 // For dark theme
 [data-bs-theme="dark"] {
   --primary: #1d98ff;
-  --primaryDark: #05243d;
   --primaryLight: #0d6efd;
+  --primaryLighter: #0d6efd;
   --surface: #0c131d;
   --surfaceLight: rgba(255, 255, 255, 0.6);
   --surfaceLighter: #ccc;
@@ -19,8 +19,8 @@
 // For light theme
 [data-bs-theme="light"] {
   --primary: #05295d;
-  --primaryDark: #011d44;
   --primaryLight: #011d44;
+  --primaryLighter: #0d6efd;
   --surface: #0c131d;
   --surfaceLight: #b1ccf5;
   --surfaceLighter: #ccc;
@@ -35,8 +35,8 @@
 }
 
 $primary: var(--primary);
-$primary-dark: var(--primaryDark);
 $primary-light: var(--primaryLight);
+$primary-lighter: var(--primaryLighter);
 $surface: var(--surface);
 $surface-light: var(--surfaceLight);
 $surface-lighter: var(--surfaceLighter);

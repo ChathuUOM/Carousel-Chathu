@@ -1,5 +1,6 @@
-<div class="container-fluid card-carousel section-wrapper">
-    <div class="page-wrapper" [style.background-image]="'url(../../../assets/images/'+bgImgUrl+')'">
+<div class="container-fluid card-carousel section-wrapper overflow-hidden" [ngClass]="{'loader-overlay': !isLoaded }">
+    <conv-loader *ngIf="!isLoaded" class="loader" ></conv-loader>
+    <div [ngClass]="{'no-display': !isLoaded }" class="page-wrapper" [style.background-image]="'url(../../../assets/images/'+bgImgUrl+')'">
         <div class="overlay">
             <!-- Top Bar  -->
             <div class="position-relative">

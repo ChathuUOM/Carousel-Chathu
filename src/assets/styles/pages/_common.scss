@@ -79,3 +79,17 @@ body {
     margin-right: 0 !important;
   }
 }
+
+.loader-overlay {
+  background: $dark-overlay-02 !important;
+}
+
+.spinner-grow {
+  width: 4rem;
+  height: 4rem;
+  color: $primary-lighter;
+}
+
+.no-display {
+  opacity: 0 !important;
+}

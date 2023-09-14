@@ -9,6 +9,7 @@ import { FullCarouselComponent } from './components/full-carousel/full-carousel.
 import { CardCarouselComponent } from './components/card-carousel/card-carousel.component';
 import { SwitchThemeComponent } from './components/switch-theme/switch-theme.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { MoreInfoComponent } from './components/more-info/more-info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     FullCarouselComponent,
     CardCarouselComponent,
     SwitchThemeComponent,
-    LoaderComponent
+    LoaderComponent,
+    MoreInfoComponent
   ],
   imports: [
     BrowserModule,

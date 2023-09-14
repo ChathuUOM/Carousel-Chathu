@@ -1,23 +1,24 @@
 <div class="container-fluid card-carousel section-wrapper overflow-hidden" [ngClass]="{'loader-overlay': !isLoaded }">
-    <conv-loader *ngIf="!isLoaded" class="loader" ></conv-loader>
-    <div [ngClass]="{'no-display': !isLoaded }" class="page-wrapper" [style.background-image]="'url(../../../assets/images/'+bgImgUrl+')'">
+    <conv-loader *ngIf="!isLoaded" class="loader"></conv-loader>
+    <div [ngClass]="{'no-display': !isLoaded }" class="page-wrapper"
+        [style.background-image]="'url(../../../assets/images/'+bgImgUrl+')'">
         <div class="overlay">
             <!-- Top Bar  -->
             <div class="position-relative">
-                <a routerLink="/home" target="_blank">
+                <a routerLink="/home">
                     <button type="button" class="btn conv-btn conv-btn--secondary btn-logo" data-bs-toggle="tooltip"
-                    title="Click me to see the previous page">
+                        title="Click me to see the previous page">
                         LOGO
                     </button>
                 </a>
-                <a routerLink="/home" target="_blank">
+                <a routerLink="/home">
                     <button type="button" class="btn conv-btn conv-btn--text btn-more">
                         DISCOVER MORE
                     </button>
                 </a>
             </div>
-             <!-- Switch Themes  -->
-             <div class="position-relative">
+            <!-- Switch Themes  -->
+            <div class="position-relative">
                 <conv-switch-theme></conv-switch-theme>
             </div>
             <!-- Title  -->
@@ -32,9 +33,17 @@
                             data-interval="1000">
                             <div class="MultiCarousel-inner">
                                 <div *ngFor="let item of hCarouselData" class="item justify-content-center">
-                                    <div class="rounded-top-start text-start d-block w-100">
+                                    <div class="card-inner-content rounded-top-start text-start d-block w-100">
                                         <div class="sub-h-typo-normal">{{item.title}} #{{item.id}}</div>
                                         <div class="pt-3 body-typo">{{item.description}}</div>
+                                    </div>
+                                    <div class="card-view-more rounded-top-start text-start w-100">
+                                        <a routerLink="/more" target="_blank">
+                                            <button type="button" class="btn conv-btn conv-btn--secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                                data-bs-toggle="tooltip" title="Click me to see the previous page">
+                                                View More
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

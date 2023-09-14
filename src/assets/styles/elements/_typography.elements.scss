@@ -36,6 +36,15 @@
   }
 }
 
+.h2-typo-normal {
+  @extend %commonTypo;
+  @include typo(40px, bold, normal, $title-text-on-surface, capitalize);
+
+  @include media-breakpoint-down(sm) {
+    font-size: 15px !important;
+  }
+}
+
 .sub-h-typo {
   @extend %commonTypo;
   @include typo(22px, bold, normal, $primary, capitalize);

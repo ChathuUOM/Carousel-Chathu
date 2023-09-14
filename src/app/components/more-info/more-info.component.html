@@ -1,0 +1,35 @@
+<div class="container-fluid card-carousel section-wrapper overflow-hidden">
+    <div class="page-wrapper" [style.background-image]="'url(../../../assets/images/'+bgImgUrl+')'">
+        <div class="overlay">
+            <!-- Top Bar  -->
+            <div class="position-relative">
+                <a routerLink="/home">
+                    <button type="button" class="btn conv-btn conv-btn--secondary btn-logo" data-bs-toggle="tooltip"
+                        title="Click me to see the previous page">
+                        LOGO
+                    </button>
+                </a>
+            </div>
+            <!-- Switch Themes  -->
+            <div class="position-relative">
+                <conv-switch-theme></conv-switch-theme>
+            </div>
+            <!-- Content  -->
+            <div class="more-card-wrapper">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title h2-typo-normal">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

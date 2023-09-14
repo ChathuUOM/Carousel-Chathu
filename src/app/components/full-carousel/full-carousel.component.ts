@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IVCarouselItem } from 'src/app/model/v-carousel.model';
 declare var $: any;
+
 @Component({
   selector: 'conv-full-carousel',
   templateUrl: './full-carousel.component.html',
@@ -8,10 +9,9 @@ declare var $: any;
 })
 export class FullCarouselComponent implements OnInit {
   vCarouselData: IVCarouselItem[] = [];
-  btnText: string = 'Logo';
   activeSlideIndex: any;
-  logoUrl: string ='assets/images/logo.png';
-  
+  logoUrl: string = '';
+
   constructor() {}
 
   isActive(item: any) {
@@ -19,6 +19,7 @@ export class FullCarouselComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.logoUrl = 'assets/images/logo.png';
     this.vCarouselData = [
       {
         id: 1,

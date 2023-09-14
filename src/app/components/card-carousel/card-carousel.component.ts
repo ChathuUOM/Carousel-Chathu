@@ -12,19 +12,24 @@ import { DataService } from 'src/app/shared/data.service';
 })
 export class CardCarouselComponent implements OnInit {
   hCarouselData: IHCarouselItem[] = [];
-  linkText: string = 'Discover more';
-  btnText: string = 'Logo';
-  title: string = 'NASA Missions';
-  bgImgUrl: string = 'earth.png';
+  linkText: string = '';
+  btnText: string = '';
+  title: string = '';
+  bgImgUrl: string = '';
   isLoaded: boolean = false;
-  logoUrl: string ='assets/images/logo.png';
+  logoUrl: string = '';
 
   constructor(
     private sanitizer: DomSanitizer,
-    public _dataService: DataService,
+    public _dataService: DataService
   ) {}
 
   ngOnInit(): void {
+    this.linkText = 'Discover more';
+    this.btnText = 'Logo';
+    this.title = 'NASA Missions';
+    this.bgImgUrl = 'earth.png';
+    this.logoUrl = 'assets/images/logo.png';
     this.hCarouselData = [
       {
         id: 1,
@@ -88,7 +93,7 @@ export class CardCarouselComponent implements OnInit {
     }, 3000);
   }
 
-  navigateToTarget(item:IHCarouselItem) {
+  navigateToTarget(item: IHCarouselItem) {
     const data = item;
     this._dataService.setData(data);
   }

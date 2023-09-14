@@ -10,7 +10,8 @@ export class FullCarouselComponent implements OnInit {
   vCarouselData: IVCarouselItem[] = [];
   btnText: string = 'Logo';
   activeSlideIndex: any;
-
+  logoUrl: string ='assets/images/logo.png';
+  
   constructor() {}
 
   isActive(item: any) {

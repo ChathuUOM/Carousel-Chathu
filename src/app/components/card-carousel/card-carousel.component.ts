@@ -2,11 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 import { IHCarouselItem } from 'src/app/model/h-carousel.model';
 import { DomSanitizer } from '@angular/platform-browser';
+import { DataService } from 'src/app/shared/data.service';
 
 @Component({
   selector: 'conv-card-carousel',
   templateUrl: './card-carousel.component.html',
   styleUrls: ['./card-carousel.component.scss'],
+  providers: [DataService],
 })
 export class CardCarouselComponent implements OnInit {
   hCarouselData: IHCarouselItem[] = [];
@@ -15,8 +17,12 @@ export class CardCarouselComponent implements OnInit {
   title: string = 'NASA Missions';
   bgImgUrl: string = 'earth.png';
   isLoaded: boolean = false;
+  logoUrl: string ='assets/images/logo.png';
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(
+    private sanitizer: DomSanitizer,
+    public _dataService: DataService,
+  ) {}
 
   ngOnInit(): void {
     this.hCarouselData = [
@@ -80,5 +86,10 @@ export class CardCarouselComponent implements OnInit {
     setTimeout(() => {
       this.isLoaded = true;
     }, 3000);
+  }
+
+  navigateToTarget(item:IHCarouselItem) {
+    const data = item;
+    this._dataService.setData(data);
   }
 }

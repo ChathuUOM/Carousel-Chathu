@@ -93,3 +93,16 @@ body {
 .no-display {
   opacity: 0 !important;
 }
+
+.logo {
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  top: 20px;
+  left: 10px;
+  transition: transform 0.2s;
+  z-index: 5;
+  &:hover {
+    transform: scale(1.5);
+  }
+}

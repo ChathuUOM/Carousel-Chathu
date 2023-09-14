@@ -5,11 +5,8 @@
         <div class="overlay">
             <!-- Top Bar  -->
             <div class="position-relative">
-                <a routerLink="/home">
-                    <button type="button" class="btn conv-btn conv-btn--secondary btn-logo" data-bs-toggle="tooltip"
-                        title="Click me to see the previous page">
-                        LOGO
-                    </button>
+                <a routerLink="/home" target="_blank">
+                    <img src="{{logoUrl}}" class="logo">
                 </a>
                 <a routerLink="/home">
                     <button type="button" class="btn conv-btn conv-btn--text btn-more">
@@ -38,12 +35,10 @@
                                         <div class="pt-3 body-typo">{{item.description}}</div>
                                     </div>
                                     <div class="card-view-more rounded-top-start text-start w-100">
-                                        <a routerLink="/more" target="_blank">
-                                            <button type="button" class="btn conv-btn conv-btn--secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                                data-bs-toggle="tooltip" title="Click me to see the previous page">
-                                                View More
-                                            </button>
-                                        </a>
+                                        <button type="button" class="btn conv-btn conv-btn--secondary card-more-btn"
+                                            data-bs-toggle="tooltip" title="Click me to see the previous page">
+                                            View More
+                                        </button>
                                     </div>
                                 </div>
                             </div>

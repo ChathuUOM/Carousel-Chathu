@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
+    * Theme switching: 
+    The option to switch between dark and light themes is available by clicking on the toggle button located at the top right corner of the page.
+
+    * Navigating between pages --> Click on LOGO.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

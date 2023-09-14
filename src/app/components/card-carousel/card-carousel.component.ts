@@ -13,13 +13,9 @@ export class CardCarouselComponent implements OnInit {
   linkText: string = 'Discover more';
   btnText: string = 'Logo';
   title: string = 'NASA Missions';
-  bgImgUrl: any;
+  bgImgUrl: string = 'earth.png';
 
-  constructor(private sanitizer: DomSanitizer) {
-    this.bgImgUrl = this.sanitizer.bypassSecurityTrustStyle(
-      `url('./assets/images/earth.png')`
-    );
-  }
+  constructor(private sanitizer: DomSanitizer) {  }
 
   ngOnInit(): void {
     this.hCarouselData = [
